@@ -1,6 +1,25 @@
-- [] JVM
-    - [X] 类加载器
-    - [] 垃圾回收 
-- [] mysql
-    - []
-- [] 
+- [ ] JVM
+    - [X] 类加载子系统
+    - [X] 运行时数据区
+    - [ ] 执行引擎
+    - [ ] 垃圾回收 
+- [ ] 数据库
+    - [ ] Mysql
+- [ ] Java集合
+    - [ ] List
+    - [ ] HashMap
+- [ ] Java并发编程
+- [ ] 中间件
+    - [ ] 消息队列
+    - [ ] Redis
+- [ ] 框架源码
+    - [ ] SpringBoot
+    - [ ] SpringCloud
+    - [ ] dubbo
+- [ ] 算法
+    - [ ] leetcode
+    - [ ] 常用排序算法
+- [ ] 源码阅读
+    - [ ] Drools
+    - [ ] springboot-devtools
+    - [ ] 
