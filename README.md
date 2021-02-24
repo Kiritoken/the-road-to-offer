@@ -25,4 +25,5 @@
     - [ ] 
 - [ ] 分布式事物
 - [ ] 事物隔离级别
-- [ ] 分库分表sharding-sphere 
+- [ ] 分库分表sharding-sphere (http://shardingsphere.apache.org/index_zh.html)[http://shardingsphere.apache.org/index_zh.html]
+- [ ] dubbo?
