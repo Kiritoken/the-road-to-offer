@@ -39,3 +39,13 @@ drop index XXX on [TABLE_NAME];
 ```sql
 mysql -u root -p < sakila-data.sql
 ```
+
++ 清屏
+```sql
+system clear;
+```
+
++ 查看mysql事务隔离级别 默认可重复读
+```sql
+show variables like 'transaction_isolation';
+```
