@@ -1,16 +1,45 @@
 - [ ] JVM
     - [X] 类加载子系统
     - [X] 运行时数据区
-    - [ ] 执行引擎
-    - [ ] 垃圾回收 
+    - [X] 执行引擎
+    - [X] 垃圾回收
+    - [X] JVM参数
+    - [X] 分析工具 
 - [ ] 数据库
     - [ ] Mysql
+        - [X] 存储引擎
+        - [X] 索引优化
+        - [X] 事务级别
+        - [X] MVCC
+        - [X] 读写分离
+        - [ ] 分库分表
+        - [X] BufferPool        
+        - [X] 双写部署策略
+        - [X] 乐观锁
+        - [X] 悲观锁
+        - [X] 常用mysql指令
 - [ ] Java集合
     - [ ] List
-    - [ ] HashMap
+        - [X] ArrayList
+        - [X] LinkedList
+        - [X] Vector
+        - [X] CopyOnWriteArrayList
+    - [X] HashMap
+    - [ ] ConcurrentHashMap
+    - [ ] Set
+        - [X] HashSet
+        - [X] TreeSet
 - [ ] Java并发编程
 - [ ] 中间件
     - [ ] 消息队列
+        - [X] 使用消息队列解决什么问题
+        - [X] 消息队列的选择
+        - [X] 怎么保证消息队列高可用（镜像集群）
+        - [X] 重复消费（幂等）
+        - [X] 消息丢失（持久化）
+        - [ ] 分布式事务的消息队列解决方案
+            - [X] 本地消息表
+            - [ ] 最终一致性        
     - [ ] Redis
 - [ ] 框架源码
     - [ ] SpringBoot
@@ -22,8 +51,9 @@
 - [ ] 源码阅读
     - [ ] Drools
     - [ ] springboot-devtools
-    - [ ] 
 - [ ] 分布式事物
-- [ ] 事物隔离级别
-- [ ] 分库分表sharding-sphere (http://shardingsphere.apache.org/index_zh.html)[http://shardingsphere.apache.org/index_zh.html]
+- [ ] 分库分表sharding-sphere
 - [ ] dubbo?
+- [ ] 退火算法
+- [ ] LRU
+- [ ] LFU
