@@ -275,3 +275,18 @@ public V get(Object key) {
 
 + LastRun 机制
     + 在扩容rehash的时候对原链表
+
+
+## 完全由线程安全类组成的程序不一定是线程安全的
++ 虽然ConcurrentHashMap内部的操作是线程安全的，但是如果程序使用不当还是会出现不安全，例如下面：
+```java
+private static ConcurrentHashMap<Integer, Object> hashMap;
+
+public static void putIfAbsent(int key, Function<Integer, Object> callback) {
+    if (!hashMap.contains(key)) {
+        hashMap.put(key, callback.apply(key));
+    }
+}
+```
+多个线程都判断不存在key的value，都会put一个新的value，出现问题
++ 解决办法是可以使用putIfAbsent,确保不重新new 一个新的对象
