@@ -154,3 +154,16 @@ vector每次add的时候都需要加锁操作，JVM检测到对同一个对象�
 执行同步代码块；
 
 ## 轻量级锁
++ lock record
+
+-------
+
+
++ 自旋锁虽然减少了因为阻塞带来的线程上下文切换开销，但是相应的会增加CPU处理时间，浪费CPU资源，因此之后有了自适应的自旋锁
+
++ 锁消除的例子比如jdk1.5之前，String的拼接使用的是StringBuffer，经过逃逸分析，方法内的对象不会逃逸处方法，那么就会消除StringBuffer中的synchronized锁
+
+## monitor 源码解析
+
+
+https://juejin.cn/post/6844903949334478855
